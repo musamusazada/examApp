@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Exam Application</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-10 studentsBox">
+                    <div class="title-box">
+                        <h3>Student List</h3>
+                    </div>
+                    <div class="mainContainer">
+                        <div class="col-12">
+                            <label for="stuName">Student Name</label>
+                            <input type="text" id="stuName">
+                        </div>
+                    </div>
+                    <button id="addStudent">Add Student</button>
+                    <div class="listContainer">
+                        <div class="titleContainer">
+                            <h3>Student Name</h3>
+                            <h3>Exam</h3>
+                            <h3>Min Score</h3>
+                            <h3>Max Score</h3>
+                            <h3>Average Score</h3>
+                        </div>
+                        <div class="listContainer__Students"></div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="examFiller__wrapper">
+
+                <div class="col-10 examFiller__container">
+                    <div class="form-wrapper">
+                        <div class="input__field">
+                            <label for="examName">Exam Name</label>
+                            <select name="examName" id="examName">
+                                <option selected disabled>Exam</option>
+                                <option value="math">Math</option>
+                                <option value="chemistry">Chemistry</option>
+                                <option value="physics">Physics</option>
+                            </select>
+                        </div>
+                        <div class="input__field">
+                            <label for="examScore">Score</label>
+                            <input type="text" name="examScore">
+                        </div>
+                        <button id="addExam">Add Exam</button>
+                    </div>
+                    <div class="examTitle">
+                        <h4>Order</h4>
+                        <h4>Exam Name</h4>
+                        <h4>Score</h4>
+                    </div>
+                    <div class="examItems__container"></div>
+                    <span id="close">X</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
